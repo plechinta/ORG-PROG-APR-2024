@@ -3,12 +3,13 @@ package org.prog;
 public class Main {
 
     /**
-     *############################################################
-     *###########################[Car2]###########################
-     *############################################################
-     *##########[Car1]###########[Car3]###########################
-     *############################################################
-     *######1################100###########200####################
+     * ############################################################
+     * ###########################[Car2]###########################
+     * ############################################################
+     * ##########[Car1]###########[Car3]###########################
+     * ############################################################
+     * ######1################100###########200####################
+     *
      * @param args
      */
 
@@ -19,13 +20,13 @@ public class Main {
 
         try {
             paintCar(null, "green");
-        } catch (NullPointerException e){
+        } catch (NullPointerException e) {
             System.out.println("NPE oops!");
-        } catch (RuntimeException e){
+        } catch (RuntimeException e) {
             System.out.println("RTE oops!");
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("EX oops!");
-        } catch (Throwable e){
+        } catch (Throwable e) {
             System.out.println("TH oops!");
         } finally {
             System.out.println("This code works always!");
@@ -97,7 +98,8 @@ public class Main {
 //        System.out.println("That guys car is " + thatGuysCar.color);
     }
 
-    public static void paintCar(Car carToPaint, String carNewColor){
+    public static void paintCar(Car carToPaint, String carNewColor) {
         carToPaint.color = carNewColor;
     }
 }
+
